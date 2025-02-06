@@ -27,11 +27,11 @@ export const Item = ({ item }: { item: fave }) => {
             </Link>
           </p>
           <Link
-            className="underline underline-offset-2 hover:text-emerald-700 hover:dark:text-emerald-500 text-sm leading-tight hidden group-hover:block"
+            className="hover:underline underline-offset-2 hover:text-emerald-700 hover:dark:text-emerald-500 text-sm leading-none hidden group-hover:block"
             target="_blank"
             href={`/info/${item.url}`}
           >
-            #
+            # <span className="sr-only">Info</span>
           </Link>
         </header>
         <p className="text-sm leading-tight text-neutral-500 dark:text-neutral-400 mt-0.5">
