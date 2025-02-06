@@ -7,9 +7,6 @@ export default async function Page({
   params: Promise<{ slug: string }>;
 }) {
   const slug = (await params).slug;
-
-  console.log(slug);
-
   const { rows } = await turso.execute(
     `SELECT * FROM favourites WHERE URL = "${slug}"`,
   );
@@ -20,8 +17,6 @@ export default async function Page({
   if (!item) {
     return <div>Not found</div>;
   }
-
-  console.log(faves);
 
   return <Info item={item} />;
 }
