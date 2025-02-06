@@ -25,7 +25,7 @@ export const Info = ({ item }: { item: fave }) => {
             {item.url}
           </Link>
         </h1>
-        <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-0.5">
+        <p className="text-neutral-500 dark:text-neutral-400 mt-1">
           Tags:{" "}
           {tags.map((tag, index) => (
             <Link
@@ -38,13 +38,13 @@ export const Info = ({ item }: { item: fave }) => {
             </Link>
           ))}
         </p>
-        <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-0.5">
-          Posted by:{" "}
+        <p className="text-neutral-500 dark:text-neutral-400 mt-1">
+          Added by:{" "}
           <Link href={`#`} className="hover:underline">
             {item.author}
           </Link>
         </p>
-        <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-0.5">
+        <p className="text-neutral-500 dark:text-neutral-400 mt-1">
           Source:{" "}
           <Link href={`#`} className="hover:underline">
             {item.Source}
