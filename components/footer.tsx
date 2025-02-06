@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const Footer = () => (
-  <footer className="row-start-3 flex gap-4 lg:mt-32 my-16 lg:gap-12 xl:gap-4 2xl:gap-8 flex-wrap items-start text-sm xl:grid grid-cols-3 2xl:grid-cols-8">
+  <footer className="row-start-3 flex gap-4 lg:mt-32 lg:gap-12 xl:gap-4 2xl:gap-8 flex-wrap items-start text-sm xl:grid grid-cols-3 2xl:grid-cols-8">
     <p className="text-pretty 2xl:col-span-3 xl:pr-16">
       Thanks to{" "}
       <Link
