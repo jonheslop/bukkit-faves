@@ -45,7 +45,7 @@ export async function upload(
       };
     }
     const cloudflare = await fetch(
-      `https://worker.albion-dev.workers.dev/${validatedData.data.image.name}`,
+      `https://api.gif.land/${validatedData.data.image.name}`,
       {
         method: "PUT",
         body: validatedData.data.image,
